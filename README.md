@@ -76,7 +76,7 @@ Printing results on the terminal.
 
 Printing results to the out file. The best result I have is 0.282 secs. 
 
-<img src="img/best_result.PNG" alt="drawing" width="320"/>
+<img src="img/best_result.png" alt="drawing" width="320"/>
 
 
 ## To make faster
