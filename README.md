@@ -14,7 +14,7 @@ Amazingly fast sudoku solver, coded in C.
 ### Input
 The top most number indicates number of test case. Each problem is separated by an empty line. '0' means blank. If you have another format of input/output, you should change some implementations.
 ```bash
-100
+100000
 074 130 805
 156 270 943
 938 065 127
@@ -68,15 +68,15 @@ So I changed it to make one producer, one consumer and one printer to work simul
 ## Result
 My testing environment is MacBook Pro (15-inch, 2015), 2.5 GHz Intel Core i7, and runs Ubuntu 16.04 with parallels Desktop. The gifs below is the results of running 100,000 test cases. 
 
-<img src="../gif/fast_sudoku_1.gif" alt="drawing" width="480"/>
+<img src="gif/fast_sudoku_1.gif" alt="drawing" width="480"/>
 
 Printing results on the terminal.
 
-<img src="../gif/fast_sudoku_2.gif" alt="drawing" width="480"/>
+<img src="gif/fast_sudoku_2.gif" alt="drawing" width="480"/>
 
 Printing results to the out file. The best result I have is 0.282 secs. 
 
-<img src="../img/best_result.PNG" alt="drawing" width="320"/>
+<img src="img/best_result.PNG" alt="drawing" width="320"/>
 
 
 ## To make faster
