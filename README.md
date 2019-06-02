@@ -60,6 +60,42 @@ The top most number indicates number of test case. Each problem is separated by 
 
 ...
 ```
+
+## How to run ![build badge](https://img.shields.io/badge/build-passing-green.svg)
+You should compile the code befor you run it. Or use my Makefile.
+
+```bash
+gcc -pthread -o fastSudoku fastSudoku.c -O2
+
+or
+
+Make
+```
+You need a problem set file to scanf().
+
+If you want to print the results on the terminal, then
+```bash
+./fastSudoku <prob_big.out
+
+```
+Or, ff you want to print the results in the out file, then
+```bash
+./fastSudoku <prob_big.out >sol_big.out
+
+```
+If you want to check the execution time, add 'time' in front of them.
+```bash
+time ./fastSudoku <prob_big.out >sol_big.out
+
+```
+
+## How to evaluate
+run 'tester.out' to evaluate the results. If everything correct, you can see '0/100000(errorr/all test)'.
+```bash
+./tester.out sol_big.out
+
+```
+
 ## Multithreading
 Firstly, I tried to make one producer (who scanf() and make problem sets), four consumers (who solve problem sets) and one printer (who printf() to make output) with semaphores. But I found it takes even more time than single thread, because it takes more time on the printer, so the producer and consumers are waiting for the lock. 
 
